@@ -11,6 +11,14 @@
  * @return {[String]} Sample: 'Your age is either 11 or 12'
  */
 
+function calculateAge(birthYear, currentYear){
+	var age = currentYear - birthYear
+	var otherage = age - 1
+	return("Your age is " + otherage + " or " + age)
+}
+var phil = calculateAge(2003, 2016)
+
+console.log(phil)
 /**
  * CHALLENGE 002: PPAP REMIX JS style
  * ------------------------------------------------------------
@@ -31,7 +39,13 @@
  * To do this try the {String}.charAt() method that can be found here:
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt
  */
-
+function ppapRemix(item1, item2, item3){
+	var firstletter1 = item1.CharAt(0);
+	var firstletter2 = item2.CharAt(0);
+	var firstletter3 = item3.CharAt(0);	
+	var acronym = item1 + item3 + item2 + item1;
+	return(acronym + ", I have a " + item1 + ". I have a " + item2 + ", Uh!, "+ item1 + "-" + item2 + "")
+}
 /**
  * CHALLENGE 003: Its made in hawaii. So I get Kama'aina yah?
  * ------------------------------------------------------------
